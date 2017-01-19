@@ -1,0 +1,26 @@
+
+<h1>Show Property Page</h1>
+
+<div class="row">
+
+    <div class="col-md-4">
+      <%= image_tag @property.property_img.url(:property_show), class: "property_show" %>
+    </div>
+
+    <div class="col-md-8">
+      <h2><%= @property.description %></h2>
+      <h4><%= @property.city %></h4>
+      <h4><%= @property.country %></h4>
+      <h5><%= @property.zimmer %></h5>
+      <h5><%= @property.size %></h5>
+    </div>
+
+</div>
+
+<% if admin_signed_in? %>
+<% if @property.admin_id == current_admin.id %>
+
+<%= link_to "Edit", edit_property_path %>
+<%= link_to "Delete", property_path(@property), method: :delete, data: { confirm: "Are you sure?"} %>
+<% end %>
+<% end %>

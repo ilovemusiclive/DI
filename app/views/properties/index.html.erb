@@ -1,0 +1,13 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<div class="row">
+
+  <% @properties.each do |property| %>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <a href="/properties/<%= property.id %>" >
+        <%= image_tag property.property_img.url(:property_index), class: "property" %></a>
+    </div>
+
+  <% end %>
+</div>
