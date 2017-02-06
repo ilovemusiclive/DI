@@ -11,6 +11,12 @@ class PropertiesController < ApplicationController
   end
 
   def show
+    if params[:category].blank?
+      @properties = Property.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @properties = Property.where(:category_id => @category_id).order("created_at DESC")
+    end
 
   end
 

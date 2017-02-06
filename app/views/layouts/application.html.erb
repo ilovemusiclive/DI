@@ -15,49 +15,70 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <%= link_to "Home", root_path, class: "navbar-brand" %>
-          <%= link_to "About", static_page_about_path, class: "navbar-brand" %>
-          <%= link_to "Contact", static_page_contact_path, class: "navbar-brand" %>
-        </div>
+<div class="container">
 
-        <ul class="nav navbar-nav">
+  <header>
 
-          <% if admin_signed_in? %>
-          <li><%= link_to "Sign out", destroy_admin_session_path, method: :delete %></li>
-          <% else %>
-          <li><%= link_to "Sign up", new_admin_registration_path %></li>
-          <li><%= link_to "Log in", new_admin_session_path %></li>
-          <% end %>
-        </ul>
+    <div class="logo"><%= link_to image_tag("dova_logo.svg", :height => '100%', :width => '100%', :alt => "Logo"), root_path %></div>
 
-        <ul class="nav navbar-nav navbar-right">
-          <% Category.all.each do |category| %>
-            <li><%= link_to category.name, properties_path(category: category.name), class: "link" %>
-            </li>
+      <nav class="navbar navbar-default">
 
-          <% end %>
+          <div class="navbar-header">
+            <ul class="nav navbar-nav">
+              <li class="tags"><%= link_to "About", static_page_about_path %></li>
 
-          <% if admin_signed_in? %>
-            <li><%= link_to "Add property", new_property_path %></li>
+              <% Category.all.each do |category| %>
+                <li class="tags"><%= link_to category.name, properties_path(category: category.name), class: "link" %>
+                </li>
 
-          <% end %>
-        </ul>
+              <% end %>
 
-      </div>
-    </nav>
+              <% if admin_signed_in? %>
+              <li class="tags"><%= link_to "Sign out", destroy_admin_session_path, method: :delete %></li>
+
+              <% else %>
+              <li class="tags"><%= link_to "Sign up", new_admin_registration_path %></li>
+              <li class="tags"><%= link_to "Log in", new_admin_session_path %></li>
+              <% end %>
+
+
+              <% if admin_signed_in? %>
+              <li class="tags"><%= link_to "Add property", new_property_path %></li>
+              <% end %>
+            </ul>
+          </div>
+
+      </nav>
+
+  </header>
+
+</div>
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
-    <div class="container">
-      <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
+
+<footer>
+
+  <div class="contact-container">
+
+    <div class="logo-footer"><%= link_to image_tag("dova_logo.svg", :height => '100%', :width => '100%', :alt => "Logo", :class => "link-footer"), root_path %>
     </div>
 
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <div class="contact-text">
+      <p class="text">Contact details.</p>
+      <p class="email-text">Email: ludwig.fellmann@gmail.com</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </body>
 </html>

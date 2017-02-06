@@ -1,11 +1,15 @@
-<%= simple_form_for @property, :html => { :multipart => true} do |f| %>
-  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a Property Type") %>
-  <%= f.input :description, as: :text %>
-  <%= f.file_field :property_img %>
-  <%= f.input :street %>
-  <%= f.input :city %>
-  <%= f.input :country, collection: [ "Germany", "United Kingdom"] %>
-  <%= f.input :zimmer %>
-  <%= f.input :size %>
-  <%= f.button :submit %>
-<% end %>
+<div class="forms">
+
+  <%= simple_form_for @property, :html => { :multipart => true} do |f| %>
+    <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a Property Type") %>
+    <%= f.input :description, as: :text %>
+    <%= f.file_field :property_img %>
+    <%= f.input :street %>
+    <%= f.input :city %>
+    <%= f.input :country, collection: [ "Germany", "United Kingdom"] %>
+    <%= f.input :zimmer %>
+    <%= f.input :size %>
+    <%= f.button :submit %>
+  <% end %>
+
+</div>

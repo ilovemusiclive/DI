@@ -16,3 +16,281 @@
 
 @import "properties.scss";
 @import "static_page.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+// ******* START OF FOOTER ******** //
+
+
+footer {
+  color: white;
+  height: auto;
+  width: auto;
+  text-align: center;
+  background: black;
+}
+
+
+.contact-section {
+  margin: 0auto;
+  text-align: center;
+}
+
+
+.contact-text {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.email-text {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// ****** END OF FOOTER ****** //
+
+
+.container {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.forms {
+  width : 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #29769d;
+}
+
+
+// ********* START OF HOME PAGE MAIN IMAGE ********* //
+
+
+.banner {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+
+}
+
+// ********** END OF HOME PAGE MAIN IMAGE ******** //
+
+
+
+// *********** START OF NAVIGATION CSS ************* //
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-header {
+  width: 100%;
+  text-align: center;
+}
+
+.tags {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+.tags:hover {
+    background-color: #29769d;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  opacity: .7;
+  height: 50px;
+  padding: 5px 0 5px 0;
+  width: 100%;
+  background: #29769d;
+  transition-duration: 0.9s;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.link-footer {
+  margin-top: 10px;
+  text-align: center;
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+}
+
+// *********** END OF NAVIGATION CSS ************ //
+
+
+// +++++++++++ START OF MEDIA QUERIES MIN-WIDTH 600PX +++++++++++ //
+
+@media (min-width: 600px) {
+
+li {
+  list-style: none;
+}
+
+
+// ****** START OF NAVIGATION ****** //
+
+header {
+  position: fixed;
+  z-index: 99;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+nav {
+  opacity: .5;
+  flex:2;
+}
+
+
+.logo {
+  height: auto;
+  background: #29769d;
+  opacity: .7;
+  flex: 1;
+  width: 100%;
+  padding-left: 5px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s
+}
+
+
+.logo:hover {
+  opacity: 1;
+}
+
+
+.link-footer {
+  margin-top: 10px;
+  text-align: center;
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.navbar-header {
+  width: 100%;
+}
+
+
+.nav {
+  width: 100%;
+  display: flex;
+}
+
+.tags {
+  flex: 1;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s
+}
+
+.tags:hover {
+  font-weight: 600;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+// ****** END OF NAVIGATION ******* //
+
+
+// ******* START OF FOOTER ******** //
+
+
+.contact-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.contact-text {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  flex: 1;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.contact-text:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.email-text {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// ****** END OF FOOTER ****** //
+
+
+
+// +++++++++ END OF MEDIA QUERIES MIN-600PX +++++++++++ //
+
+}

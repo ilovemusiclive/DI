@@ -2,12 +2,264 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// ******* START OF PROPERTY INDEX CSS ******* //
+
+.row-property {
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+.col-xs-12 {
+  background: white;
+  margin-bottom: 10px;
+}
+
+.props {
+
+}
+
 .property {
   height: 250px;
   width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.des {
+  background: white;
+  list-style: none;
+  padding: 0;
+}
+
+// ******* END OF PROPERTY INDEX CSS ******* //
+
+
+
+// ******* START OF PROPERTY SHOW PAGE ******* //
+
+
+.show-page {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.show-image {
+  margin: 0 auto;
+  flex: 1;
+}
+
+.show-address {
+  margin: 0 auto;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+
 .property_show {
-  height: 200px;
-  width: 300px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.admin {
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+  color: black;
+}
+
+
+.admin-text {
+  list-style: none;
+  background: white;
+  color: black;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.edit:hover {
+  background: black;
+  flex: 1;
+  opacity: .2;
+}
+
+.delete:hover {
+  background: black;
+  opacity: .2;
+  flex: 1;
+}
+
+
+// ******* END OF PROPERTY SHOW PAGE ******* //
+
+
+// ****** START OF PROPERTY IMAGE LINKS ****** //
+
+.container_image {
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.property-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.property-image {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom:  10px;
+}
+
+.prop-link {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.25);
+}
+
+
+// ******* END OF PROPERTY IMAGE LINKS ********* //
+
+
+// ++++++++ START OF MEDIA QUERIES MIN-600PX +++++++ //
+
+@media (min-width: 600px) {
+
+
+// ******* START OF PROPERTY INDEX CSS ******* //
+
+.row-property {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.col-xs-12 {
+  display:flex;
+  background: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.col-xs-12:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.props {
+  flex: 1;
+}
+
+.des {
+  text-align: center;
+  list-style: none;
+  background: white;
+  flex: 2;
+}
+
+.property {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+// ******* END OF PROPERTY INDEX CSS ******* //
+
+
+// ******** START OF PROPERTY IMAGE LINKS ********** //
+
+.container_image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: white;
+}
+
+
+.property-image {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom:  10px;
+  flex: 1;
+}
+
+.property-links {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link {
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.link:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+// ********** END OF PROPERTY IMAGE LINKS *********** //
+
+// ******** START OF PROPERTY SHOW PAGE ******** //
+
+.show-page {
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.show-page:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.show-image {
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.property_show {
+  width: 700px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top:20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.show-address {
+  margin: 0 auto;
+  flex: 1;
+  width: 700px;
+  height: auto;
+  padding: 10px;
+}
+
+
+// ******** START OF PROPERTY SHOW PAGE ******** //
+
+// +++++++ END OF MEDIA QUERIES MIN-WIDTH 600PX +++++++++++ //
+
 }

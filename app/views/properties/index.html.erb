@@ -1,13 +1,28 @@
 <h1 class="current-category"><%= params[:category] %></h1>
 
-<div class="row">
+<div class="row-property">
 
   <% @properties.each do |property| %>
 
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <a href="/properties/<%= property.id %>" >
+    <div class="col-xs-12">
+
+    <div class="props">
+      <a href="/properties/<%= property.id %>">
         <%= image_tag property.property_img.url(:property_index), class: "property" %></a>
     </div>
 
+    <ul class="des"><li><h5 class="text"><%= property.city %></h5></li>
+        <li><h5 class="text"><%= property.country %></h5></li>
+        <li><h5 class="text">sqm: <%= property.size %></h5></li>
+        <li><h5 class="text"><%= property.description %></h5></li>
+    </ul>
+    </div>
+
   <% end %>
+
+
+
 </div>
+
+
+
