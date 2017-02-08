@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-categories = Catergory.create([{name: 'Halle'}, {name: 'Haus'}])
+categories = Catergory.create(caterogry_id: 1, name: 'Halle'}, {caterogry_id: 2, name: 'Haus')
