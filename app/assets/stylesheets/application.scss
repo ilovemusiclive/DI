@@ -18,6 +18,10 @@
 @import "static_page.scss";
 @import "devise.scss";
 
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
 body {
   margin: 0;
   padding: 0;

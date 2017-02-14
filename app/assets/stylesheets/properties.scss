@@ -62,6 +62,8 @@
 .property_show {
   width: 100%;
   height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -234,6 +236,7 @@
 // ******** START OF PROPERTY SHOW PAGE ******** //
 
 .show-page {
+  margin: 0 auto;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -252,8 +255,8 @@
 .property_show {
   width: 700px;
   height: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-top:20px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
