@@ -1,28 +1,27 @@
 <div class="show-page">
 
   <div class="show-image">
-    <%= image_tag @property.property_img.url(:property_show), class: "property_show" %>
-  </div>
+    <%= image_tag @property.property_img.url(:property_show), class: "property_show" %></div>
 
-  <div class="show-address">
+    <div class="show-address">
 
-    <h5 class="text"><%= @property.city %></h5>
-    <h5 class="text"><%= @property.country %></h5>
-    <h5 class="text">Rooms: <%= @property.zimmer %></h5>
-    <h5 class="text">sqm: <%= @property.size %></h5>
-    <h5 class="text"><%= @property.description %></h5>
-  </div>
+      <h5 class="text"><%= @property.city %></h5>
+      <h5 class="text"><%= @property.country %></h5>
+      <h5 class="text">Rooms: <%= @property.zimmer %></h5>
+      <h5 class="text">sqm: <%= @property.size %></h5>
+      <h5 class="text"><%= @property.description %></h5>
+    </div>
 
 </div>
 
-  <div class="admin">
-    <% if admin_signed_in? %>
-    <% if @property.admin_id == current_admin.id %>
+<div class="admin">
+  <% if admin_signed_in? %>
+  <% if @property.admin_id == current_admin.id %>
 
-    <h5 class="admin-text edit"><%= link_to "Edit", edit_property_path %></h5>
-    <h5 class="admin-text delete"><%= link_to "Delete", property_path(@property), method: :delete, data: { confirm: "Are you sure?"} %></h5>
-    <% end %>
-    <% end %>
-  </div>
+  <h5 class="admin-text edit"><%= link_to "Edit", edit_property_path %></h5>
+  <h5 class="admin-text delete"><%= link_to "Delete", property_path(@property), method: :delete, data: { confirm: "Are you sure?"} %></h5>
+  <% end %>
+  <% end %>
+</div>
 
 

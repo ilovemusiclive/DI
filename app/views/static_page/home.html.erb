@@ -1,90 +1,41 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
 
-  <html>
-    <head>
-      <title><%= yield(:title) %> | Dova Immobilien</title>
-    </head>
-      <body>
+<html>
 
-        <div class="container_banner">
-          <div class="row main-image">
-            <div class="col-sm-12">
+  <head>
+    <title><%= yield(:title) %> | Dova Immobilien</title>
+  </head>
 
-              <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images3.alphacoders.com/241/241557.jpg');">
+  <body>
 
-                <div class="banner-content">
-                  <h1>Welcome to Dova Immobilien</h1>
-                  <h3>A company building for the future</h3>
-                </div>
+    <div class="container_banner">
+      <div class="row main-image">
+        <div class="col-sm-12">
 
-              </div>
+          <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images3.alphacoders.com/241/241557.jpg');">
+
+            <div class="banner-content">
+              <h1>Welcome to Dova Immobilien</h1>
+              <h3>A company building for the future</h3>
             </div>
+
           </div>
         </div>
+      </div>
+    </div>
 
-            <div class="container_image">
-              <ul class="property-links" >
-                <% Category.all.each do |category| %>
-                  <li class="property-image"><h4><%= category.name %></h4><%= link_to image_tag("light-building.jpg", :height => '95%', :width => '95%', :alt => "property", :class => "prop-link"), properties_path(category: category.name) %>
-                  </li>
-                <% end %>
-              </ul>
-            </div>
+    <div class="container_image">
+      <ul class="property-links" >
+        <% Category.all.each do |category| %>
+          <li class="property-image"><h2><%= category.name %></h2><%= link_to image_tag("building.jpg", :height => '95%', :width => '95%', :alt => "property", :class => "prop-link"), properties_path(category: category.name) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
 
-
-
-            <div class="future" style="background: white; height: auto; margin: 10px;">
-
-              <div class="service">
-                <div class="service-image"><%= image_tag("map.jpg", :alt => "rss feed", :height => "95%", :width => "95%", :title => "SERVICE", :class => "message-image") %></div>
-
-                <div class="service-text">
-                  <p class="text"><h4>Service</h4>Our Warehouse and business facilities are perfectly located to service any business requirements. positioned strategically to reduce costs on logistical requirements whilst maximizing ability to service and expand into all major European markets.</p>
-                  <h5>Some of the markets we currently service from our strategic location</h5>
-
-                  <div class="countries-list">
-                    <ul class="countries">
-                      <li>Germany</li>
-                      <li>France</li>
-                      <li>Holland</li>
-                      <li>Belgium</li>
-                      <li>United Kingdom</li>
-                    </ul>
-                    <ul class="countries">
-                      <li>Switzeland</li>
-                      <li>Italy</li>
-                      <li>Austria</li>
-                      <li>Poland</li>
-                      <li>Hungrey</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-                <div class="projects">
-                <div class="project-image"><%= image_tag("projects.jpg", :alt => "rss feed", :height => "95%", :width => "95%", :title => "PROJECT", :class => "message-image") %></div>
-
-                <div class="project-text">
-                  <p class="text"><h4>Projects</h4>We are always looking to expand on our current portfolio and whilst our core business is focused on storage and business facilities, our interests stretch beyond with a view on business trends in the years ahead.</p>
-                </div>
-              </div>
-
-                <div class="enviroment">
-                <div class="enviroment-image"><%= image_tag("sun.jpg", :alt => "rss feed", :height => "95%", :width => "95%", :title => "ENVIROMENT", :class => "message-image") %></div>
-
-                <div class="enviroment-text">
-                  <p class="text"><h4>Enviroment</h4>We are keen supporters of enviromental initiatives with all our storage units equipped with the latest solar technology, providing clean energy to our business interests whilst supporting the community by feeding back into the grid. It is our beleif that our investment into the advancements of renewable energy will return dividends today, tommorow and well into our future.</p>
-
-                  <h5>Our renewable energy partner </h5>
-                  <p>Universal Solar Gmbh<p>
-                </div>
-              </div>
-
-            </div>
-
-      </body>
-  </html>
+  </body>
+</html>
 
 
 

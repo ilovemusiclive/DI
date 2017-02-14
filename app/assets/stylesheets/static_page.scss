@@ -1,48 +1,3 @@
-// ****** START OF ABOUT PAGE ******* //
-
-
-.ludwig {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.ludwig-title {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.ludwig-text {
-  width: 100%;
-  background: white;
-  padding: 15px;
-  margin: 0 auto;
-}
-
-// ****** END OF ABOUT PAGE ****** //
-
-
-// ****** START OF HOME PAGE ****** //
-
-
-.service, .projects, .enviroment {
-  margin-bottom: 40px;
-}
-
-.countries-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.countries {
-  flex: 1;
-}
-
-
-// ****** END OF HOME PAGE ****** //
 
 
 // +++++++ START OF MEDIA QUERIES MIN-WIDTH 600PX +++++++ //
@@ -52,62 +7,18 @@
 
 // ****** START OF ABOUT PAGE ***** //
 
-.container_lutz {
-
-}
-
-.ludwig {
-  background: white;
-  width: 180px;
-  height: auto;
-  margin-left: 11.5%;
-  margin-top: 5%;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.ludwig:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.ludwig-title {
-  text-align: center;
-  padding: 0px;
-}
-
-.ludwig-text {
-  margin: 0 auto;
-  background: white;
-  padding: 15px;
-  width: 80%;
-}
-
-.history {
-  padding: 5px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  flex: 1;
-}
-
-.history:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
 .text {
   line-height: 150%;
   -webkit-opacity: 0.75;
   -moz-opacity: 0.75;
   opacity: 0.75;
--webkit-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 
 .text:hover {
   line-height: 157%;
@@ -116,13 +27,6 @@
   opacity: 1;
 }
 
-// ******* END OF ABOUT PAGE ****** //
-
-// ********* START OF HOME PAGE ******** //
-
-.future {
-
-}
 
 .service {
   margin: 10px;
@@ -135,17 +39,21 @@
   transition-duration: 0.4s;
 }
 
+
 .service-image {
   flex: 1;
 }
+
 
 .service-text {
   flex: 1;
 }
 
+
 .service:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 
 .countries-list {
   display: flex;
@@ -153,60 +61,17 @@
   justify-content: space-around;
 }
 
+
 .countries {
   flex: 1;
 }
 
-.projects {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.project-image {
-  flex: 1;
-}
-
-.project-text {
-  flex: 1;
-}
-
-.projects:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.enviroment {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.enviroment-image {
-  flex: 1;
-}
-
-.enviroment-text {
-  flex: 1;
-}
-
-.enviroment:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
 .message-image {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-// ******** END OF HOME PAGE ********** //
+
+// ******* END OF ABOUT PAGE ****** //
 
 // +++++++ END OF MEDIA QUERIES MIN-WIDTH 600PX +++++++ //
 
