@@ -85,9 +85,8 @@ footer {
   width : 95%;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid black;
   border-radius: 5px;
-  background-color: #29769d;
+  background-color: #e5e5e5;
 }
 
 
@@ -197,9 +196,8 @@ li {
 .forms {
   width : 80%;
   margin: 0 auto;
-  border: 1px solid black;
   border-radius: 5px;
-  background-color: #29769d;
+  background-color: #e5e5e5;
 }
 
 // ****** START OF NAVIGATION ****** //
@@ -222,6 +220,7 @@ nav {
 .logo {
   height: auto;
   background: #29769d;
+  border-radius: 2px;
   opacity: .7;
   flex: 1;
   width: 100%;
@@ -259,6 +258,7 @@ nav {
 .tags {
   flex: 1;
   font-weight: 400;
+  border-radius: 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s
