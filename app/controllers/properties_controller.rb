@@ -55,10 +55,6 @@ class PropertiesController < ApplicationController
     redirect_to root_path
   end
 
-  def home
-
-  end
-
   private
 
   def property_params
