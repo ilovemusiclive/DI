@@ -73,7 +73,8 @@
 .admin {
   text-align: center;
   width: 100%;
-  margin: 20px;
+  padding: 20px;
+  margin: 0 auto;
   color: black;
 }
 
@@ -81,6 +82,7 @@
 .admin-text {
   list-style: none;
   background: white;
+  text-decoration: none;
   color: black;
   margin: 0 auto;
   width: 80%;
@@ -90,16 +92,40 @@
   justify-content: space-around;
 }
 
+.edit {
+  color: black;
+  font-weight: 400;
+  transition-duration: .6s;
+  width: 80px;
+  text-decoration: none;
+}
 
 .edit:hover {
-  background: black;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  background: #29769d;
+  padding: 10px;
   flex: 1;
-  opacity: .2;
+}
+
+.delete {
+  color: black;
+  width: 80px;
+  margin-top: 10px;
+  transition-duration: .6s;
+  text-decoration: none;
 }
 
 .delete:hover {
-  background: black;
-  opacity: .2;
+  list-style: none;
+  color: black;
+  font-weight: 600;
+  background: #29769d;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
   flex: 1;
 }
 
@@ -142,8 +168,7 @@
 
 .prop-link:hover {
   opacity: .8;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.25);
-
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.25);
 }
 
 
@@ -270,6 +295,43 @@
   padding: 10px;
 }
 
+.admin-text {
+color: black;
+text-decoration: none;
+}
+
+.edit {
+  width: 80px;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  border-radius: 2px;
+}
+
+.edit:hover {
+  flex: 1;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.delete {
+  margin-top: 10px;
+  width: 80px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.delete:hover {
+  flex: 1;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 // ******** START OF PROPERTY SHOW PAGE ******** //
 
