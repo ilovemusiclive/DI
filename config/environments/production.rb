@@ -60,8 +60,9 @@ Rails.application.configure do
 
 
   config.paperclip_defaults = {
-  storage: :s3,
-  s3_credentials: {
+    Paperclip::Attachment.default_options[:url] = 'https://console.aws.amazon.com/s3/buckets/dovas/properties/property_imgs/000?region=eu-west-1'
+    storage: :s3,
+    s3_credentials: {
     bucket: ENV.fetch('S3_BUCKET_NAME'),
     access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
     secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
@@ -69,6 +70,7 @@ Rails.application.configure do
   }
 }
 
+  #AWS::S3::DEFAULT_HOST.replace "s3-eu-central-1.amazonaws.com"
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
