@@ -1,5 +1,18 @@
 
 
+.countries-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+
+.countries {
+  flex: 1;
+}
+
+
 // +++++++ START OF MEDIA QUERIES MIN-WIDTH 600PX +++++++ //
 
 @media (min-width: 600px) {
