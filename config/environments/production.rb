@@ -60,7 +60,7 @@ Rails.application.configure do
 
 
   config.paperclip_defaults = {
-    Paperclip::Attachment.default_options[:url] = ':https://console.aws.amazon.com/s3/buckets/dovas/properties/property_imgs?region=eu-west-1'
+    Paperclip::Attachment.default_options[:s3_dovas] = 's3-eu-west-1.amazonaws.com'
     storage: :s3,
     s3_credentials: {
     bucket: ENV.fetch('S3_BUCKET_NAME'),
