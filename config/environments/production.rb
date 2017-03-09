@@ -60,7 +60,6 @@ Rails.application.configure do
 
 
   config.paperclip_defaults = {
-    Paperclip::Attachment.default_options[:s3_dovas] = 'http://s3-eu-central-1.amazonaws.com/dovas'
     storage: :s3,
     s3_credentials: {
     bucket: ENV.fetch('S3_BUCKET_NAME'),
