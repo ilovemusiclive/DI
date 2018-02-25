@@ -12,6 +12,21 @@
   flex: 1;
 }
 
+.contact-text {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.email-text {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 // +++++++ START OF MEDIA QUERIES MIN-WIDTH 600PX +++++++ //
 
@@ -21,6 +36,7 @@
 // ****** START OF ABOUT PAGE ***** //
 
 .text {
+  padding: 10px;
   line-height: 150%;
   -webkit-opacity: 0.75;
   -moz-opacity: 0.75;
@@ -59,6 +75,7 @@
 
 
 .service-text {
+
   flex: 1;
 }
 

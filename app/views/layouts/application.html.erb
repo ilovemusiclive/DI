@@ -20,13 +20,14 @@
 
   <header>
 
-    <div class="logo"><%= link_to image_tag("dova_logo.svg", :height => '100%', :width => '100%', :alt => "Logo"), root_path %></div>
+    <div class="logo"><%= link_to image_tag("dova_log.png", :height => '100%', :width => '100%', :alt => "Logo"), root_path %></div>
 
       <nav class="navbar navbar-default">
 
           <div class="navbar-header">
             <ul class="nav navbar-nav">
               <li class="tags"><%= link_to "About", static_page_about_path %></li>
+              <li class="tags"><%= link_to "People", static_page_people_path %></li>
 
               <% Category.all.each do |category| %>
                 <li class="tags"><%= link_to category.name, properties_path(category: category.name), class: "link" %>
@@ -38,7 +39,7 @@
               <li class="tags"><%= link_to "Sign out", destroy_admin_session_path, method: :delete %></li>
 
               <% else %>
-              <li class="tags"><%= link_to "Sign up", new_admin_registration_path %></li>
+
               <li class="tags"><%= link_to "Log in", new_admin_session_path %></li>
               <% end %>
 
@@ -66,13 +67,7 @@
 
   <div class="contact-container">
 
-    <div class="logo-footer"><%= link_to image_tag("dova_logo.svg", :height => '100%', :width => '100%', :alt => "Logo", :class => "link-footer"), root_path %></div>
-
-
-      <div class="contact-text">
-        <p class="text">Contact details.</p>
-        <p class="email-text">Email: ludwig.fellmann@gmail.com</p>
-      </div>
+    <div class="logo-footer"><%= link_to image_tag("dova_log.png", :height => '100%', :width => '100%', :alt => "Logo", :class => "link-footer"), root_path %></div>
 
   </div>
 
